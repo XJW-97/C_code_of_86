@@ -1,0 +1,136 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<assert.h> 
+#include<string.h>
+
+//模拟实现strlen
+#if 0
+int my_strlen(const char* arr)
+{
+	assert(arr);
+	int count = 0;
+	while (*arr)
+	{
+		arr++
+		count++;
+		
+	}
+	return count;
+}
+void test()
+{
+	char arr[] = "abcdef";
+	int ret = my_strlen(arr);
+	printf("%d ", ret);
+}
+int main()
+{
+	test();
+	return 0;
+}
+#endif
+
+//模拟实现strcpy
+#if 0
+char* my_strcpy(char* dest, const char* arr)
+{
+	char* p = dest;
+	while (*dest++=*arr++)
+	{
+		;
+	}
+	return p;
+}
+void test()
+{
+	char arr[] = "abcdef";
+	char dest[20] = { 0 };
+	printf("arr:%s\n", arr);
+	printf("dest:%s\n", dest);
+	my_strcpy(dest,arr);
+	printf("dest:%s", dest);
+
+	
+}
+int main()
+{
+	test();
+	return 0;
+}
+#endif 
+//模拟实现strcmp
+#if 0
+int my_strcmp(const char* arr, const char* arr1)
+{
+	if (strlen(arr) != strlen(arr1))
+	{
+		return strlen(arr) - strlen(arr1);
+	}
+	else 
+	{
+		while (*arr == *arr1)
+		{
+			if (*arr == '\0')
+			{
+				return 0;
+			}
+			arr++;
+			arr1++;
+		}
+		return (int)(*arr - *arr1);
+	}
+	
+}
+void test()
+{
+	char arr [] = "abcdef";
+	char arr1[] = "abcdef";
+	char arr2[] = "abcdefg";
+	char arr3[] = "qcdefg";
+	int ret=my_strcmp(arr, arr1);
+	printf("%d \n", ret);
+	int ret1=my_strcmp(arr, arr2);
+	printf("%d \n", ret1);
+	int ret2 = my_strcmp(arr3, arr);
+	printf("%d \n", ret2);
+}
+int main()
+{
+	test();
+	return 0;
+}
+
+#endif
+模拟实现strcat
+#if 0
+char* my_strcat(char* dest, const char* sour)
+{
+	assert(dest && sour);
+	char* p = dest;
+	char* p1 = sour;
+	while (*dest)
+	{
+		dest++;
+	}
+	while (*dest++ = *sour++)
+	{
+		;
+	}
+	return p;
+}
+void test()
+{
+	char arr[] = "efgh";
+	char arr1[20] = "abcd";
+	printf("拼接前：%s\n", arr1);
+	my_strcat(arr1, arr);
+	printf("拼接后：%s\n", arr1);
+	printf("拼接后：%s\n", my_strcat(arr1, arr));
+}
+int main()
+{
+	test();
+	return 0;
+}
+
+#endif
