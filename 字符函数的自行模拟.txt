@@ -1,0 +1,106 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<assert.h> 
+#include<string.h>
+//模拟实现strstr
+#if 1
+char* my_strstr(const char* str1, const char* str2)
+{
+	//assert(str1 && str2);
+	char* p1 = str1;
+	char* p2 = str2;
+	while (*str1 != *str2)
+	{
+		if (*str1 == '\0')
+		{
+			return NULL;
+		}
+		str1++;
+	}
+	while (*str1 != '\0')
+	{
+		while (*str1 == *str2)
+		{
+			str1++;
+			str2++;
+			if (*str2 == '\0')
+			{
+				return p1;
+			}
+		}
+		p1 = str1;//str1向后走了一位
+		str2 = p2;//重新开始比较
+
+		if (*str1 != *str2)//新的str1与str2是否不同
+		{
+			p1=++str1;
+		}
+	}
+	return NULL;
+}
+int main()
+{
+	char arr1[] = "abbcdebbd";
+	char arr2[] = "bc";//bd
+	char *p=my_strstr(arr1, arr2);
+	printf("%s",p);
+}
+#endif
+
+//模拟实现memcpy
+#if 0
+void* my_memcpy(void* dest, const void* src, size_t count)
+{
+	void* p = dest;
+	for (size_t i = 0; i < count; i++)
+	{
+		*(((char*)dest) + i) = *(((char*)src) + i);
+
+	}
+	return p;
+}
+int main()
+{
+	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+	//my_memcpy(arr+3, arr, 12);
+	//my_memcpy(arr , arr+3, 12);
+	my_memcpy(arr + 2, arr+1, 12);
+}
+#endif
+//模拟实现memmove
+//void *memmove( void *dest, const void *src, size_t count );
+#if 0
+void* my_memmove(void* dest, const void* src, size_t count)
+{
+	void* p = dest;
+	if ((char *)dest > (char *)src)//目标地址大于源地址	从后向前
+	{
+		for (int i = (int)count-1; i >= 0; i--)
+		{
+			*(((char*)dest) + i) = *(((char*)src) + i);
+		}
+		return p;
+	}
+	else if ((char*)dest < (char*)src)//目标地址小于源地址从前向后
+	{
+		for (size_t i = 0; i < count ; i++)
+		{
+			*(((char*)dest)+i)  = *(((char*)src) + i);
+
+		}
+		return p;
+	}
+	else//目标地址等于源地址 任意返回一个地址
+	{
+		return dest;
+	}
+}
+int main()
+{	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+	//my_memmove(arr+3, arr, 12);
+	//my_memmove(arr + 3, arr, 12);
+	//my_memmove(arr + 1, arr, 12);//目标地址大于源地址从后向前
+	my_memmove(arr + 3, arr + 4, 12);//目标地址小于源地址从前向后
+
+}
+#endif
