@@ -1,0 +1,10 @@
+﻿  test.c
+F:\86班代码\DS\DS\seqlist.h(67,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(121,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(123,21): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(146,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(167,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(186,39): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(198,8): warning C4018: “>”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(204,21): warning C4018: “<”: 有符号/无符号不匹配
+  DS.vcxproj -> F:\86班代码\DS\Debug\DS.exe
