@@ -1,0 +1,16 @@
+﻿  test.c
+F:\86班代码\DS\DS\seqlist.h(118,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(172,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(174,21): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(197,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(218,20): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(237,39): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(249,8): warning C4018: “>”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(255,21): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(280,22): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(331,19): warning C4018: “>”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(372,21): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\seqlist.h(376,23): warning C4018: “<”: 有符号/无符号不匹配
+F:\86班代码\DS\DS\test.c(23,17): warning C4101: “item1”: 未引用的局部变量
+F:\86班代码\DS\DS\test.c(24,10): warning C4101: “pos1”: 未引用的局部变量
+  DS.vcxproj -> F:\86班代码\DS\Debug\DS.exe
