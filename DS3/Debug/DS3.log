@@ -1,0 +1,4 @@
+﻿  main .c
+F:\86班代码\DS3\DS3\main .c(28,6): warning C4101: “pos”: 未引用的局部变量
+F:\86班代码\DS3\DS3\list.h(54): warning C4716: “_BuyNode”: 必须返回一个值
+  DS3.vcxproj -> F:\86班代码\DS3\Debug\DS3.exe
