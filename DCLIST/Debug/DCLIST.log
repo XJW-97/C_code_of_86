@@ -1,0 +1,6 @@
+﻿  testmain.c
+F:\86班代码\DCLIST\DCLIST\DClist.h(30,35): warning C4030: 第一个形参表比第二个长
+F:\86班代码\DCLIST\DCLIST\DClist.h(63,1): warning C4029: 声明的形参表不同于定义
+F:\86班代码\DCLIST\DCLIST\DClist.h(287,10): warning C4098: “DCListDestroy”:“void”函数返回值
+F:\86班代码\DCLIST\DCLIST\DClist.h(47): warning C4716: “_BuyDCListNode”: 必须返回一个值
+  DCLIST.vcxproj -> F:\86班代码\DCLIST\Debug\DCLIST.exe
