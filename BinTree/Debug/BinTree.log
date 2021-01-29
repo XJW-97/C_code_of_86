@@ -1,0 +1,4 @@
+﻿  test.c
+F:\86班代码\BinTree\BinTree\tree.h(78,15): warning C4101: “new_node”: 未引用的局部变量
+F:\86班代码\BinTree\BinTree\test.c(6,10): warning C4101: “bt1”: 未引用的局部变量
+  BinTree.vcxproj -> F:\86班代码\BinTree\Debug\BinTree.exe
